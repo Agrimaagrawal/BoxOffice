@@ -9,3 +9,4 @@ const response=await fetch(` ${BASE_URL}${query}`)
 
 };
 export const searchForShows=(query)=> apiGet(`/search/shows?q=${query}`);
+export const searchForActors=(query)=>apiGet(`/search/people?q=${query}`);

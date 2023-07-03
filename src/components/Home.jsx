@@ -1,7 +1,9 @@
 import {useState} from 'react';
 import { searchForShows } from '../api/tvmaze';
 import { searchForActors } from '../api/tvmaze';
-import {Search} from '../components/Search'
+import Search from '../components/Search'
+import Shows from './Showfol/Shows';
+import Actors from './Actorfol/Actors';
 
 const Home = () => {
 
@@ -30,17 +32,11 @@ const Home = () => {
     if(errorv){
       return <div>Error:{setErrorv.message}</div>
     }
+    if(apiData?.length === 0){
+          return <div>No results</div>
+    }
     if(apiData){
-      return apiData[0].show ? apiData.map((data=>{
-        return(
-          <div key={data.show.id}>{data.show.name}</div>
-        )
-      })): apiData.map((data=>{
-        return(
-          <div key={data.person.id}>{data.person.name}</div>
-        )
-      }))
-        
+      return apiData[0].show ? <Shows shows={apiData}/>:<Actors actor={apiData}/>   
     }
     return null;
 

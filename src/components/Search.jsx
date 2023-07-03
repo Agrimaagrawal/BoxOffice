@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-const Search = ({onSearch}) => {
+ const  Search = ({onSearch}) => {
     const [searchOption,setSearchOption]=useState('shows');
     const [searchvalue,setSearchvalue]=useState("");
   const handleText=(e)=>{
@@ -38,6 +38,7 @@ const Search = ({onSearch}) => {
     </div>
   )
 }
-
 export default Search
+
+
 

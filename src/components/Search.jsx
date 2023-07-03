@@ -22,8 +22,9 @@ import {useState} from 'react';
     <div>
       <form onSubmit={onSubmit}>
         <div className='flex flex-col justify-center items-center gap-5'>
-      <input type="text" value={searchvalue} onChange={handleText} placeholder="Search" className='m-4'/>
-      <div><label>
+      <input type="text" value={searchvalue} onChange={handleText} placeholder="Search" className='m-4 border-black border-2 rounded-md p-4 text-xl text-blue-600'/>
+      <div className='gap-3 flex text-lg'>
+        <label >
         Shows
         <input type="radio" name="search-option" value="shows" checked={searchOption==='shows'} onChange={onRadioChange}/>
       </label>

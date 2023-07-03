@@ -1,9 +1,10 @@
 import './App.css'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Home from './components/Home'
+import Home from './components/pages/Home'
 import Navbar from './components/Navbar'
-import Dome from './components/Dome';
-import MainLayout from './components/MainLayout'
+import Starred from './components/pages/Starred';
+import MainLayout from './components/MainLayout';
+import ShowDetails from './components/pages/ShowDetails'
 
 function App() {
   
@@ -14,8 +15,9 @@ function App() {
     <Routes>
       <Route element={<MainLayout/>}>
       <Route path='/' element={<Home/>}></Route>
-      <Route path='/Dome' element ={<Dome/>}/>
+      <Route path='/Starred' element ={<Starred/>}/>
       </Route>
+      <Route path='/show/:showId' element={<ShowDetails/>}/>
       </Routes>
     </BrowserRouter>
 

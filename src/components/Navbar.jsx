@@ -1,19 +1,19 @@
 import {Link} from 'react-router-dom'
 const Navbar = () => {
   const link=[
-    {text:"home",
+    {text:"Home",
     to:'/'
           },
           {
-            text:'Dome',
-            to:'/Dome'
+            text:'Starred',
+            to:'/Starred'
           }
   ]
   return (
     <div>
-      <ul className='flex gap-2'>
+      <ul className='flex gap-6 justify-center m-10 '>
         {
-          link.map(item=><li key={item.text} className="text-blue-500"><Link to={item.to}>{item.text}</Link></li>)
+          link.map(item=><li key={item.text} className="text-blue-500 text-xl hover:text-blue-800 "><Link to={item.to}>{item.text}</Link></li>)
         }
       </ul>
     </div>

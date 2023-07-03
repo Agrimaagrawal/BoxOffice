@@ -6,7 +6,7 @@ const Shows = ({shows}) => {
     <div>
       {shows.map((data=>{
         return (
-          <ShowCard key={data.show.id} name={data.show.name} image={data.show.image ?.medium} summary={data.show.summary}/>
+          <ShowCard key={data.show.id} name={data.show.name} image={data.show.image ?.medium} summary={data.show.summary} id={data.show.id}/>
         )
       }))
     }

@@ -1,9 +1,9 @@
 import {useState} from 'react';
-import { searchForShows } from '../api/tvmaze';
-import { searchForActors } from '../api/tvmaze';
-import Search from '../components/Search'
-import Shows from './Showfol/Shows';
-import Actors from './Actorfol/Actors';
+import { searchForShows } from '../../api/tvmaze';
+import { searchForActors } from '../../api/tvmaze';
+import Search from '../Search'
+import Shows from '../Showfol/Shows';
+import Actors from '../Actorfol/Actors';
 
 const Home = () => {
 

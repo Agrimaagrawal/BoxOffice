@@ -7,6 +7,7 @@ import MainLayout from './components/MainLayout';
 import ShowDetails from './components/pages/ShowDetails'
 
 function App() {
+ 
   
 
   return (
@@ -17,7 +18,7 @@ function App() {
       <Route path='/' element={<Home/>}></Route>
       <Route path='/Starred' element ={<Starred/>}/>
       </Route>
-      <Route path='/show/:showId' element={<ShowDetails/>}/>
+      <Route path='/show/:id' element={<ShowDetails/>}/>
       </Routes>
     </BrowserRouter>
 

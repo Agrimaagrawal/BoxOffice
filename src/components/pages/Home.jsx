@@ -9,6 +9,7 @@ const Home = () => {
 
   const [apiData,setApiData]=useState(null);
   const [errorv,setErrorv]=useState(null);
+  
 
   
   const onSearch=async(op)=>{
@@ -19,7 +20,7 @@ const Home = () => {
         setApiData(result);
       }
       else{
-        const result=await searchForActors(op.o);
+        const result=await searchForActors(op.q);
         setApiData(result);
       }
    

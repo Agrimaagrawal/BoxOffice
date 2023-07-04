@@ -2,8 +2,8 @@ import {Link} from 'react-router-dom';
 const ActorCard = ({name,image}) => {
   return (
     <div>
-        <div className="w-full h-full flex justify-center  flex-col items-center ">
-      <img src={image} className='m-3'/>
+      {image ?<div className="w-full h-full flex justify-center  flex-col items-center ">
+        <img src={image} className='m-3'/>
       <h1>{name}</h1>
       
       <div>
@@ -11,7 +11,8 @@ const ActorCard = ({name,image}) => {
         <button type="button" className=''>Star me</button>
       </div>
       
-      </div>
+      </div> :""}
+        
       
     </div>
   )

@@ -15,7 +15,7 @@ import {useState} from 'react';
     ev.preventDefault();
     const options={
         q:searchvalue,
-        o:searchOption
+        searchOption
     }
     onSearch(options);
   }

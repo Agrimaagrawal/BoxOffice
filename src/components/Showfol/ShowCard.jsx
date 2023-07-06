@@ -3,7 +3,7 @@ const ShowCard = ({name,image,id,summary,onStarclick,isStarred}) => {
   const SummaryStripped=summary? summary.split(" ").slice(0,10).join(' ').replace(/<.+?>/g,'') : 'No description'
   return (
     <div >
-      <div className="w-[300px] h-auto flex  justify-center  flex-col items-center mb-9 ">
+      <div className="w-[300px] h-auto flex  justify-center  flex-col items-center mb-4 ">
       <img src={image} className='m-3 shadow-xl'/>
       <h1 className='font-extrabold text-2xl p-3'>{name}</h1>
       <p>{SummaryStripped}</p>

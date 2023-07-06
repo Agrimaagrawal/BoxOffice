@@ -4,12 +4,9 @@ const ActorCard = ({name,image}) => {
     <div>
       {image ?<div className="w-full h-full flex justify-center  flex-col items-center ">
         <img src={image} className='m-3'/>
-      <h1>{name}</h1>
+      <h1 className='text-xl font-bold p-4'>{name}</h1>
       
-      <div>
-        <Link to='/'>Read more</Link>
-        <button type="button" className=''>Star me</button>
-      </div>
+      
       
       </div> :""}
         

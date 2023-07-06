@@ -21,21 +21,21 @@ const ShowDetails = () => {
     
     return (
       <>
-       <Link to='/' className="text-xl bg-yellow-400">Go Back</Link>
-      <div>
+       <Link to='/' className="text-xl bg-yellow-400 p-2 rounded-md">Go Back</Link>
+      <div className="mt-4">
         <ShowMainData image={showData.image.original} name={showData.name} rating={showData.rating} summary={showData.summary} genres={showData.genres}/>
       </div>
-      <div>
-        <h2>Details</h2>
+      <div className="flex justify-center flex-wrap m-4 ">
+        <h2 className="text-2xl font-bold pr-4 ">Details</h2>
         <Details status={showData.status} premiered={showData.premiered} network={showData.network}/>
 
       </div>
-      <div>
-        <h2>Seasons</h2>
+      <div className="flex justify-center  ">
+        <h2 className="text-2xl font-bold pr-4 ">Seasons</h2>
         {<Seasons seasons={showData._embedded.seasons}/>}
       </div>
       <div>
-        <h2>Cast</h2>
+        <h2 className="text-4xl font-bold pr-4 mt-16">Cast</h2>
         {<Cast cast={showData._embedded.cast}/>}
       </div>
       </>

@@ -20,10 +20,12 @@ const Shows = ({shows}) => {
 
   }
   return (
-    <div>
+    <div className="mt-7 flex flex-wrap justify-center gap-4 ">
       {shows.map((data=>{
         return (
+        
           <ShowCard key={data.show.id} name={data.show.name} image={data.show.image ?.medium} summary={data.show.summary} id={data.show.id}onStarclick={onStarclick} isStarred={starred.includes(data.show.id)}/>
+          
         )
       }))
     }

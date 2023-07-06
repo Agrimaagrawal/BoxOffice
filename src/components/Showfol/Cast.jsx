@@ -2,7 +2,7 @@
 
 const Cast = ({cast}) => {
   return (
-    <div>
+    <div className="flex justify-center flex-wrap gap-4">
       {
         cast.map((cast=>{
             return(

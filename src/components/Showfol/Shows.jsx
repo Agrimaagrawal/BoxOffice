@@ -31,4 +31,4 @@ const Shows = ({shows}) => {
   )
 }
 
-export default Shows
+export default Shows;

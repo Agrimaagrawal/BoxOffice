@@ -8,6 +8,7 @@ import { useQuery } from 'react-query';
 
 const Home = () => {
   const [filter, setFilter] = useState(null);
+ 
 
   const { data:apiData,error:errorv } = useQuery({
       queryKey: ['search', filter],

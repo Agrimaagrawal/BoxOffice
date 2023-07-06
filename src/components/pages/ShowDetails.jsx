@@ -21,7 +21,7 @@ const ShowDetails = () => {
     
     return (
       <>
-       <Link to='/'>Go Back</Link>
+       <Link to='/' className="text-xl bg-yellow-400">Go Back</Link>
       <div>
         <ShowMainData image={showData.image.original} name={showData.name} rating={showData.rating} summary={showData.summary} genres={showData.genres}/>
       </div>
